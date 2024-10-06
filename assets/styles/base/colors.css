@@ -1,0 +1,23 @@
+/* Variables de couleur globales pour le mode clair */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --sidebar-bg-color: #4e73df;
+    --sidebar-text-color: #ffffff;
+    --sidebar-link-hover-bg: #2e59d9;
+    --sidebar-separator-color: #ffffff55;
+    --navbar-bg-color: #f8f9fa;
+    --navbar-text-color: #000000;
+}
+
+/* Variables pour le mode sombre */
+body.dark-mode {
+    --background-color: #1e1e2f;
+    --text-color: #f0f0f0;
+    --sidebar-bg-color: #27293d;
+    --sidebar-text-color: #f0f0f0;
+    --sidebar-link-hover-bg: #3b3f50;
+    --sidebar-separator-color: #44475a;
+    --navbar-bg-color: #343a40;
+    --navbar-text-color: #f0f0f0;
+}

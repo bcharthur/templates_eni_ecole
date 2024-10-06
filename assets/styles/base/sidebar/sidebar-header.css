@@ -1,0 +1,13 @@
+/* Alignement et espacement du header */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 1rem;
+    background-color: var(--sidebar-bg-color);
+}
+
+.sidebar.collapsed .sidebar-header {
+    padding: 5px 0;
+}

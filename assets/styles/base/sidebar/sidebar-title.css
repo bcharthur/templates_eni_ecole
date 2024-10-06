@@ -1,0 +1,27 @@
+.sidebar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--sidebar-text-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sidebar .sidebar-title {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar.collapsed .sidebar-title {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.sidebar .nav-link span,
+.sidebar-title {
+    display: inline-block;
+    transition: none;
+    animation: text-roll-down 0.3s ease forwards;
+}

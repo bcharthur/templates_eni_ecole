@@ -1,0 +1,54 @@
+/* Topbar styling */
+.topbar {
+    height: 56px;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.topbar .navbar-nav {
+    align-items: center;
+}
+
+.topbar .dropdown-menu {
+    border: 1px solid #dddfeb;
+    border-radius: 0.35rem;
+    background-color: #f8f9fc;
+}
+
+/* Styles pour le toggle switch */
+#darkModeSwitch {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    appearance: none;
+    background: #ccc;
+    outline: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#darkModeSwitch::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+#darkModeSwitch:checked {
+    background-color: #4e73df;
+}
+
+#darkModeSwitch:checked::before {
+    transform: translateX(20px);
+}
+

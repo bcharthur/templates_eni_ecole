@@ -1,0 +1,41 @@
+/* Sidebar layout */
+.sidebar {
+    width: 250px;
+    background-color: var(--sidebar-bg-color);
+    color: var(--sidebar-text-color);
+    transition: width 0.3s ease, padding 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+    padding-top: 0.5rem;
+    transition: width 0.3s ease, padding 0.3s ease;
+}
+
+#content-wrapper {
+    transition: margin-left 0.3s ease;
+    margin-left: 250px;
+}
+
+#content-wrapper.collapsed {
+    margin-left: 80px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Ajout de la règle globale pour les transitions */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar, .topbar, .nav-link {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

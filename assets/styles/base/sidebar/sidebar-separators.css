@@ -1,0 +1,20 @@
+/* Séparateur entre les éléments de la sidebar */
+.sidebar-separator {
+    height: 1px;
+    background-color: var(--sidebar-separator-color);
+    margin: 10px auto;
+    width: 80%;
+    transition: width 0.3s ease;
+}
+
+/* En mode collapsed, on réduit la longueur du séparateur */
+.sidebar.collapsed .sidebar-separator {
+    width: 50%;
+    margin: 5px auto;
+}
+
+/* Séparateur ajusté en mode normal */
+.sidebar .sidebar-separator {
+    /*width: 80%; !* Largeur du séparateur en mode non collapsed *!*/
+    transition: width 0.3s ease;
+}
